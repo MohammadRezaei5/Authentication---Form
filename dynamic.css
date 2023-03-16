@@ -1,0 +1,72 @@
+main {
+  overflow: hidden;
+  width: 50rem;
+  border-radius: 0.2rem;
+  display: flex;
+  scroll-behavior: smooth;
+}
+form {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+input {
+  border: none;
+  padding: 0.4rem 2rem;
+  border-radius: 0.3rem;
+  caret-color: hsl(0, 0%, 90%, 0.8);
+}
+input:focus {
+  border-right: 3px solid hsl(0, 0%, 90%, 0.8);
+  outline: 0;
+}
+label > span {
+  font-size: 0.8rem;
+}
+label > img {
+  width: 1.2rem;
+  position: absolute;
+  top: 1.4rem;
+  left: 0.5rem;
+}
+label > input {
+  background-color: var(--color--form-input-background);
+}
+label > input:invalid {
+  background-color: var(--color--form-input-background--invalid);
+}
+button {
+  background-color: var(--color--form-button-background);
+  color: var(--color--form-button-foreground);
+  border: 0;
+  outline: 0;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--color--form-button-background--hover);
+}
+p {
+  color: var(--color--form-paragraph-foreground);
+  text-align: center;
+}
+a {
+  color: var(--color--form-link-foreground);
+}
+section {
+  flex: 0 0 40%;
+  padding: 2rem;
+  display: grid;
+  place-items: center;
+}
+section > img {
+  width: 16rem;
+}
